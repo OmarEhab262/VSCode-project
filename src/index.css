@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #000;
+  color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333; /* Darker track background */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; /* Darker thumb color */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Lighter thumb color on hover */
+}
+
+/* For Firefox */
+/* scrollbar-width: thin;
+scrollbar-color: #555 #333; */
+
+/* For Edge (not supported in older versions) */
+.scrollable-element {
+  scrollbar-color: #555 #333;
+  scrollbar-width: thin;
+}
